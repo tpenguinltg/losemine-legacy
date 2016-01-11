@@ -590,15 +590,16 @@ public class Losemine implements ActionListener, MouseListener, KeyListener
     edit_help = new JEditorPane("text/plain",
       "X Y Z Z Y [Shift]\nMissing help file.");
     
-    File helpFile = new File("help.htm");
+    //File helpFile = new File("help.htm");
     
     // IF the help file exists
-    if (helpFile.isFile())
+    //if (helpFile.isFile())
       {
       try
         {
         // use it instead
-        edit_help = new JEditorPane(helpFile.toURI().toURL());
+        //edit_help = new JEditorPane(helpFile.toURI().toURL());
+        edit_help = new JEditorPane(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/help.htm"));
         }
       catch (Exception e)
         {
