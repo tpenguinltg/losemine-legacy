@@ -682,8 +682,8 @@ public class Losemine implements ActionListener, MouseListener, KeyListener
   public void initializeImageIcons()
     {
     // window icons
-    icon_favicon_color = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/color/favicon.gif");
-    icon_favicon_bw = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/favicon.gif");
+    icon_favicon_color = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/favicon.gif"));
+    icon_favicon_bw = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/favicon.gif"));
     icon_favicon = icon_favicon_color;
     
     
@@ -693,34 +693,34 @@ public class Losemine implements ActionListener, MouseListener, KeyListener
     icon_cell_color = new ImageIcon[16];
     for (int i = 0; i < icon_cell_color.length; i++)
       {
-      icon_cell_color[i] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/color/cell-" + i +
-        ".gif");
+      icon_cell_color[i] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/cell-" + i +
+        ".gif"));
       }// end for
       
     // face icons
     icon_face_color = new ImageIcon[5];
     icon_face_color[DEFAULT] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/face-default.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/face-default.gif"));
     icon_face_color[PRESSED] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/face-pressed.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/face-pressed.gif"));
     icon_face_color[HOLD_BREATH] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/face-hold_breath.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/face-hold_breath.gif"));
     icon_face_color[LOSE] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/face-lose.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/face-lose.gif"));
     icon_face_color[WIN] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/face-win.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/face-win.gif"));
     
     // number icons
     icon_numbers_color = new ImageIcon[12];
     for (int i = 0; i < 10; i++)
       {
       icon_numbers_color[i] = new ImageIcon(
-        "io/github/tpenguinltg/minesweeper/legacy/images/color/numbers-" + i + ".gif");
+        getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/numbers-" + i + ".gif"));
       }// end for
     icon_numbers_color[10] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/numbers--.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/numbers--.gif"));
     icon_numbers_color[11] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/color/numbers-u.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/color/numbers-u.gif"));
     
     // end color icons //
     
@@ -730,30 +730,30 @@ public class Losemine implements ActionListener, MouseListener, KeyListener
     icon_cell_bw = new ImageIcon[16];
     for (int i = 0; i < icon_cell_bw.length; i++)
       {
-      icon_cell_bw[i] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/cell-" + i +
-        ".gif");
+      icon_cell_bw[i] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/cell-" + i +
+        ".gif"));
       }// end for
       
     // face icons
     icon_face_bw = new ImageIcon[5];
     icon_face_bw[DEFAULT] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/bw/face-default.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/face-default.gif"));
     icon_face_bw[PRESSED] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/bw/face-pressed.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/face-pressed.gif"));
     icon_face_bw[HOLD_BREATH] = new ImageIcon(
-      "io/github/tpenguinltg/minesweeper/legacy/images/bw/face-hold_breath.gif");
-    icon_face_bw[LOSE] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/face-lose.gif");
-    icon_face_bw[WIN] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/face-win.gif");
+      getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/face-hold_breath.gif"));
+    icon_face_bw[LOSE] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/face-lose.gif"));
+    icon_face_bw[WIN] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/face-win.gif"));
     
     // number icons
     icon_numbers_bw = new ImageIcon[12];
     for (int i = 0; i < 10; i++)
       {
-      icon_numbers_bw[i] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers-" + i +
-        ".gif");
+      icon_numbers_bw[i] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers-" + i +
+        ".gif"));
       }// end for
-    icon_numbers_bw[10] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers--.gif");
-    icon_numbers_bw[11] = new ImageIcon("io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers-u.gif");
+    icon_numbers_bw[10] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers--.gif"));
+    icon_numbers_bw[11] = new ImageIcon(getClass().getResource("/io/github/tpenguinltg/minesweeper/legacy/images/bw/numbers-u.gif"));
     
     // end B&W icons //
     

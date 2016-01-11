@@ -1,7 +1,7 @@
 # "Losemine" (legacy version)
 A [WinMine](http://www.minesweeper.info/wiki/Windows_Minesweeper) clone written in Java.
 
-This was my submission for the final project for an introductory course in Java in 2012. Other than anonymizing the files, changing the package name, adding a Makefile and relicensing the project, the code is left as I submitted it.
+This was my submission for the final project for an introductory course in Java in 2012. Other than anonymizing the files, changing the package name, making it work as a JAR, adding a Makefile and relicensing the project, the code is left essentially as I submitted it.
 
 ## Building and running
 
